@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 #root {
   display: flex;
@@ -8,10 +8,10 @@
 
 :root {
   --vh: 1vh;
-  --font-family: "Rajdhani", sans-serif;
-  --title-font: "Ubuntu", sans-serif;
+  --font-family: "Rubik", sans-serif;
   --font-color: black;
-  --body-background: rgb(211, 180, 242);
+  --body-background: #e4e3fe;
+  --lime: #ceff1a;
 }
 
 .App {
@@ -75,13 +75,12 @@ ul {
   min-height: 40px;
   border-radius: 8px;
   border: 0.2px solid black;
-  background-color: rgb(116, 45, 183);
+  background-color: var(--lime);
   cursor: pointer;
-  color: white !important;
 }
 
 .button-root:hover {
-  background-color: rgb(108, 29, 181);
+  background-color: #6663ff;
 }
 
 .MuiInputBase-root {
@@ -150,7 +149,7 @@ ul {
 }
 
 .order-card-root:hover {
-  background-color: rgb(175, 236, 236);
+  background-color: #9290f1;
 }
 
 .order-card-info {
@@ -236,8 +235,14 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgb(211, 180, 242);
+  background-color: #4d4273;
   width: 100%;
+}
+
+.tool-tab-header-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white !important;
 }
 // Toolbar - END
 
@@ -249,7 +254,7 @@ ul {
   transform: translate(-50%, -50%) !important;
   width: 40% !important;
   height: 60% !important;
-  background-color: rgb(219, 242, 245);
+  background-color: #c8c8f3;
   border-radius: 10px !important;
   padding: 26px !important;
   padding-left: 2rem !important;

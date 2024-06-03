@@ -20,21 +20,18 @@ export default function Tool() {
     setIsLoading(true);
     const serializedData = JSON.stringify(dataArray);
     sensMSGToOpenAI({
-      prompt: `Provide a short summary of important messages, grouped under suitable headers. Include time considerations if necessary, and combine similar messages. ${serializedData}`,
+      prompt: `Provide a short summary of important messages, grouped under suitable headers. Include time considerations if necessary, and combine similar messages (Do not add from, time, date seperately). ${serializedData}`,
       model: "gpt-4",
       tokens: 1000,
     })
       .then((res) => {
         const response = res?.choices[0]?.message?.content;
-        console.log("Response : ", response);
         const formatJson = response?.replace(/```json\n?|```/g, "");
-        console.log("formatJson : ", formatJson);
         const parsedData = formatJson
           ? isValidJSON(formatJson)
             ? JSON.parse(formatJson)
             : {}
           : {};
-        console.log("parsedData : ", parsedData);
         setGenerateOutput(formatJson);
         setResultModalOpen(true);
         setIsLoading(false);

@@ -33,7 +33,7 @@ const OrderCard = ({ data, onCardClick }) => {
       </div>
       <div className="order-card-description">
         <span>
-          {trimContent(data.outline ? data.outline : data.description, 120)}
+          {trimContent(data.outline ? data.outline : data.description, 100)}
         </span>
       </div>
       <div className="order-card-type-actions">
