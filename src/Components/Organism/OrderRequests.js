@@ -42,7 +42,7 @@ const OrderCard = ({ data, onCardClick }) => {
         </div>
         {data.startTime && data.endTime && (
           <div>
-            <span>{`${data.startTime} To ${data.endTime}`}</span>
+            <span>{`${dayjs(data.meetingDate).format("DD MMMM")} - ${data.startTime} To ${data.endTime}`}</span>
           </div>
         )}
         {data.status && (

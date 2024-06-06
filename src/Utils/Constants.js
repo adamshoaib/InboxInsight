@@ -38,7 +38,7 @@ export const dataArray = [
     time: "1:45 PM",
     date: "2024-06-01T02:50:24.799Z",
     subject: "UI Deployment Stratergy Session",
-    meetingDate: "2024-06-15",
+    meetingDate: "2024-06-10T02:50:24.799Z",
     startTime: "01:00PM",
     endTime: "02:00PM",
     description:
@@ -61,7 +61,6 @@ export const dataArray = [
     time: "3:46 PM",
     date: "2024-06-01T02:50:24.799Z",
     Subject: "Lets have a party over the weekend",
-    meetingDate: "2024-06-15",
     description:
       "Hey Guys, lets meet this week and have some fun at Dominos. Please, RSVP to the party mail that I just sent you",
     type: "Discord",
